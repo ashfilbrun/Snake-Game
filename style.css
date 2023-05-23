@@ -1,0 +1,36 @@
+/* head */
+head {
+  font-family: 'Nova Oval', cursive;
+}
+/* body */
+body {
+  background-image: /* tint image */
+    linear-gradient(to right, #ea4fffe4, rgb(124, 206, 247)),
+    /* checkered effect */
+    linear-gradient(to right, #ad4fffe4 50%, white 50%),
+    linear-gradient(to bottom, #ad4fffe4 50%, white 50%);
+  background-blend-mode: normal, difference, normal;
+  background-size: 2em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: 'Nova Oval', cursive;
+  font-size: 40px;
+  height: 100 vh;
+  width: 100 vw;
+}
+/* score box */
+.container {
+  box-shadow: black 20px 10px 50px;
+  align-items: center;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  background-color: black;
+  width: 400;
+  height: 400;
+}
+/* buttons */
+
+/* maze */
