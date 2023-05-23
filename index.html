@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="script.js"></script>
+    <script defer src="script.js" type="module"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,14 +12,25 @@
     <title>Snake</title>
 </head>
 <body>
-    <script src="script.js"></script>
-    <h1>SNAKEEEE</h1>
-    <!-- game board -->
-    <div class="container" id="gameBoard">
-        <canvas id="snake"></canvas>
-    </div>
-    <!-- buttons -->
-    <div class="direction-buttons" id="directionButtons"></div>
-    <!-- snake -->
+    <header>
+        <h1>
+            <span class="mainTitle">SNAKEEEE</span>
+        </h1>
+    </header>
+    <main>
+        <div class="snakeHouse" id="game-board">
+            <div class ='snake'id="snake"></canvas>
+            <div class="food" id="food"></div>
+        </div>
+        <div class="directionBtns" id="direction-btns">
+            <span class="upBtn">up btn</span>
+            <span class="rightBtn">right btn</span>
+            <span class="downBtn">down btn</span>
+            <span class="leftBtn">left btn</span>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
