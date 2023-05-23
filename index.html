@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="script.js" type="module"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,27 +13,33 @@
 </head>
 <body>
     <header>
-        <h1>
-            <div class="mainTitle">SNAKEEEE</div> 
-        </h1>
+        <h1>SNAKEEEE</h1>
     </header>
     <main>
-        <div class="gameBoard" id="snake-house">
-            <div class ="snake"></div>
-            <div class="food"></div>
-        </div>
-        <div class="gridContainer" id="direction-btns">
-            <button class="btn" id="upBtn">up btn</button>
-            <button class="btn" id="rightBtn">right btn</button>
-            <button class="btn" id="downBtn">down btn</button>
-            <button class="btn" id="leftBtn">left btn</button>
-        </div>
-        <div class="resetBtn">
-            <button class="btn" id="resetGameBtn">Reset Game</button>
+        <div class="wrapper">
+            <div class="gridBoard">
+                <div class="gameBoard" id="snake-house">
+                    <div class="snake"></div>
+                    <div class="food"></div>
+                </div>
+                <div class="scoring">
+                    <span class="score">Score: 13</span>
+                    <span class="high-score">High Score: 62</span>
+                </div>
+            </div>
+            <div class="gridContainer" id="direction-btns">
+                <button class="btn" id="upBtn">up btn</button>
+                <button class="btn" id="rightBtn">right btn</button>
+                <button class="btn" id="downBtn">down btn</button>
+                <button class="btn" id="leftBtn">left btn</button>
+            </div>
+            <div class="resetBtn">
+                <button class="btn" id="resetGameBtn">Reset Game</button>
+            </div>
         </div>
     </main>
     <footer>
-        <div class="credits"></div>
+        <div class="credits">created by Ashlan Filbrun</div>
     </footer>
 </body>
 </html>

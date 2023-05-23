@@ -1,10 +1,3 @@
-/* head */
-
-head {
-  font-family: 'Nova Oval', cursive;
-}
-
-/* body */
 
 body {
   background-image: /* tint image */
@@ -18,8 +11,6 @@ body {
   /* align-items: center;
   justify-content: center; */
   margin: 0;
-  /* font-family: 'Nova Oval', cursive;
-  font-size: 35px; */
 }
 
 h1 {
@@ -33,10 +24,15 @@ h1 {
   justify-content: center;
   margin: 2 2 2 2;
 }
-/* score box */
+
 main {
   display: flexbox;
   justify-content: space-between;
+}
+
+.gridBoard {
+align-items: center;
+justify-content: center;
 }
 
 .gameBoard {
@@ -44,36 +40,38 @@ main {
   width: 75vmin;
   height: 75vmin;
   margin: 0 auto;
-  align-items: center;
   justify-content: center;
   background-color: white;
-  grid-template-rows: repeat(21, 1fr);
-  grid-template-columns: repeat(21, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  grid-template-columns: repeat(15, 1fr);
   box-shadow: black 20px 10px 50px;
   border: 5px solid black;
+}
+
+.snake {
+  background-color: yellowgreen;
+  border: .25vmin solid black;
+}
+
+.food {
+  background-color:blueviolet;
+  border: .25vmin solid black;
 }
 
 .gridContainer {
   display: grid;
   width: 25%;
-  align-items: center;
+  align-items: left;
   border: 2px solid black;
   background-color:blueviolet;
 }
+
+/* .resetBtn {
+
+} */
+
 .btn {
   border: 2px solid black;
   background-color: yellowgreen;
   font-family: 'Nova Oval', cursive;
 }
-.snake {
-  background-color: yellowgreen;
-  border: .25 vmin solid black;
-}
-
-.food{
-  background-color:blueviolet;
-  border: .25 vmin solid black;
-}
-/* buttons */
-
-/* maze */
