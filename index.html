@@ -1,4 +1,34 @@
 <!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chicle&family=Liu+Jian+Mao+Cao&family=Nova+Oval&family=Syncopate&display=swap" rel="stylesheet">
+    <img src="bluecaterpillar.png">
+    <title>Snake</title>
+</head>
+<body>
+    <header>
+        <h1>SNAKEEEE</h1>
+    </header>
+    <div class="container" onclick='document.getElementById("txt").focus();'>
+      <div id="menu">
+        <div class="menu-item">
+            <span id="menu-text">Press ENTER to start the game</span>
+        </div>
+      </div>
+      <div id="map" style="display: none;"></div>
+    </div>
+    <input style="opacity:0;width:0;height:0" id="txt" type="text">
+</body>
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,24 +47,12 @@
     </header>
     <main>
         <div class="wrapper">
-            <div class="gridBoard">
-                <div class="gameBoard" id="snake-house">
-                    <div class="snake"></div>
-                    <div class="food"></div>
-                </div>
+            <div class="game-board">
+                
                 <div class="scoring">
                     <span class="score">Score: 13</span>
                     <span class="high-score">High Score: 62</span>
                 </div>
-            </div>
-            <div class="gridContainer" id="direction-btns">
-                <button class="btn" id="upBtn">up btn</button>
-                <button class="btn" id="rightBtn">right btn</button>
-                <button class="btn" id="downBtn">down btn</button>
-                <button class="btn" id="leftBtn">left btn</button>
-            </div>
-            <div class="resetBtn">
-                <button class="btn" id="resetGameBtn">Reset Game</button>
             </div>
         </div>
     </main>
@@ -42,4 +60,4 @@
         <div class="credits">created by Ashlan Filbrun</div>
     </footer>
 </body>
-</html>
+</html> -->
