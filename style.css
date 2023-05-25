@@ -2,29 +2,39 @@
   margin: 0;
   padding: 0;
 }
+
+html {
+  --s: 190px; /* control the size */
+  --c: #41b65a; /* first color */
+  --_g: #f0030300 52%,var(--c) 54% 57%,#c81fba00 59%;
+  background: 
+  radial-gradient(farthest-side at -33.33% 50%,var(--_g)) 0 calc(var(--s)/2),
+  radial-gradient(farthest-side at 50% 133.33%,var(--_g)) calc(var(--s)/2) 0,
+  radial-gradient(farthest-side at 133.33% 50%,var(--_g)),
+  radial-gradient(farthest-side at 50% -33.33%,var(--_g)),
+   #1d85e6; /* second color */
+  background-size: calc(var(--s)/4.667) var(--s),var(--s) calc(var(--s)/4.667);
+}
+
 html,
 body {
   height: 100%;
 }
 body {
-background-image: /* tint image */
-  linear-gradient(to right, #ea4fffe4, rgb(124, 206, 247)),
-  linear-gradient(to right, #ad4fffe4 50%, white 50%),
-  linear-gradient(to bottom, #ad4fffe4 50%, white 50%);
-background-blend-mode: normal, difference, normal;
-background-size: 4em 4em;
-height: 100vh;
-width: 100vw;
+/* background-image: /* tint image */
+
+  height: 100vh;
+  width: 100vw;
 /* align-items: center;
 justify-content: center; */
-margin: 0;
+  margin: 0;
 /*     background: #333;
   color: #fff;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center; */
-font-family: 'Nova Oval', cursive;
+  font-family: 'Nova Oval', cursive;
 }
 .container {
   max-width: 75vmin;
@@ -58,9 +68,10 @@ font-family: 'Nova Oval', cursive;
 }
 #menu-text {
   font-family: 'Nova Oval', cursive;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   line-height: 40px;
+  color: #41b65a;
 }
 .pixel {
   width: 10%;
@@ -70,13 +81,15 @@ font-family: 'Nova Oval', cursive;
 .snake-body {
   z-index: 5;
   position: relative;
-  border:#1b87bd;
-  background-image: url(bluecaterpillar.png);
+  color:#1d85e6;
+  border: 2px black solid;
   box-shadow: 0 0 7px #00ff00, 0 0 20px #00ff00;
+  border-radius: 20% / 50%;
 }
 .food {
   background: #DBFF4E;
-  border:#00ff00;
+  border:3px #00ff00 solid;
+  border-radius: 50% / 50%;
   box-shadow: 0 0 10px #ff0062, 0 0 40px #ff0062, 0 0 80px #ff0062;
 }
 
@@ -97,17 +110,21 @@ body {
   /* margin: 0;
 } */
 
-/* h1 {
-  /* max-width: 75vmax; */
-  /* font-family: 'Nova Oval', cursive;
+h1 {
+  max-width: 100vmin; 
+  font-family: 'Nova Oval', cursive;
   font-size: 35px;
   background-color: rgba(123, 255, 141, 0.743);
   border-radius: 10px;
   align-items: center;
   display: flex;
   justify-content: center;
-  margin: 2 2 2 2; */
-/* } */ 
+  margin: auto;
+  padding: 4px;;
+  border:2px solid rgb(255, 0, 157);
+} 
+
+
 
 /* main {
   display: flexbox;
