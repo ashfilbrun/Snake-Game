@@ -27,10 +27,13 @@ The goal is for the glow worm to eat as many special substances as possible with
 
 ## Attributions
 
+- https://trello.com/b/TyiXkaDt/project-1
+- https://fonts.google.com/
 - https://www.w3schools.com/
-- https://www.figma.com
-- https://www.mdn.com
-- https://www.github.com
+- https://www.figma.com/file/Yq0cdxR5AgE3i2HTiynewi/Untitled?type=design&node-id=0-1&t=v9wBA4ZEhPnYkwpD-0
+- https://www.mdn.com/
+- https://www.github.com/
+- https://css-tricks.com/how-to-create-wavy-shapes-patterns-in-css/
 
 ## Technologies Used
 
