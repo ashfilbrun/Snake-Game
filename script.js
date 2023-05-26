@@ -1,10 +1,10 @@
-var snakeBody, food, direction, allowedToMove, isPlaying;
+var wormBody, food, direction, allowedToMove, isPlaying;
 var map;
 var speed = 2;
 var play;
 
 function initializeVariables() {
-  snakeBody = [[0, 0]];
+  wormBody = [[0, 0]];
   food = 0;
   direction = 'Right';
   allowedToMove = false;
@@ -21,14 +21,14 @@ function initializeGameState(mapElementId) {
     pixel.setAttribute('class', 'pixel');
     map.appendChild(pixel);
   }
-    // Generating the snake body and food
-  map.children[0].classList.add('snake-body');
+    // Generating the worm body and food
+  map.children[0].classList.add('worm-body');
   generateFood();
 }
 
 function generateFood() {
-  // To prevent generating food over the snake
-  while (map.children[food].classList.contains('snake-body')) {
+  // To prevent generating food over the worm
+  while (map.children[food].classList.contains('worm-body')) {
     food = Math.floor(Math.random() * 100);
   }
   // Placing food on the map
@@ -49,8 +49,7 @@ function pauseGame() {
   if (isPlaying) {
     allowedToMove = false;
     clearInterval(play);
-    document.getElementById('menu-text').innerText =
-      'PAUSED\nPress ENTER to resume';
+    document.getElementById('menu-text').innerText = 'PAUSED\nPress ENTER to resume';
     document.getElementById('menu').style.display = '';
     document.getElementById('map').style.display = 'none';
     isPlaying = false;
@@ -61,7 +60,7 @@ function gameOver() {
   clearInterval(play);
   document.getElementById('menu-text').innerText =
     'Game Over\nYour Score: ' +
-    (snakeBody.length - 1) +
+    (wormBody.length - 1) +
     '\nPress ENTER to restart!';
   document.getElementById('menu').style.display = '';
   document.getElementById('map').style.display = 'none';
@@ -71,7 +70,7 @@ function gameOver() {
 
 function updatePosition() {
   var newPosR, newPosC;
-  var head = snakeBody[snakeBody.length - 1];
+  var head = wormBody[wormBody.length - 1];
   switch (direction) {
     case 'Up':
       newPosR = head[0] - 1;
@@ -92,43 +91,41 @@ function updatePosition() {
     default:
       break;
   }
-    // Checking if snake hit the wall
+    // Checking if worm hit the wall
   if (newPosR < 0 || newPosR > 9 || newPosC < 0 || newPosC > 9) {
     gameOver();
   } else {
-    snakeBody.push([newPosR, newPosC]);
+    wormBody.push([newPosR, newPosC]);
     updateScreen();
     allowedToMove = true;
   }
 }
 
 function updateScreen() {
-  var tailArray = snakeBody.shift();
+  var tailArray = wormBody.shift();
   var tail = parseInt(tailArray[0] + '' + tailArray[1]);
-  var headArray = snakeBody[snakeBody.length - 1];
+  var headArray = wormBody[wormBody.length - 1];
   var head = parseInt(headArray[0] + '' + headArray[1]);
-  // Checking if the snake bite its body
-  if (map.children[head].classList.contains('snake-body')) {
-      gameOver();
+  // Checking if the worm bite its body
+  if (map.children[head].classList.contains('worm-body')) {
+    gameOver();
   } else {
     // Adds the new head block
-    map.children[head].classList.add('snake-body');
+    map.children[head].classList.add('worm-body');
     // Removes the tail block
-    map.children[tail].classList.remove('snake-body');
-    // If snake eats the food
+    map.children[tail].classList.remove('worm-body');
+    // If worm eats the food
     if (head == food) {
-
       map.children[food].classList.remove('food');
-      snakeBody.unshift(tailArray);
-      // Checking if the snake reached its max size
-      snakeBody.length == 100 && gameOver();
+      wormBody.unshift(tailArray);
+      // Checking if the worm reached its max size
+      wormBody.length == 100 && gameOver();
       generateFood();
     }
   }
 }
 
 // CONTROLS
-
 document.onkeydown = keyPress;
 
 function keyPress(e) {
@@ -165,5 +162,4 @@ function keyPress(e) {
 }
 
 // Initiates the game
-
 initializeGameState('map');
