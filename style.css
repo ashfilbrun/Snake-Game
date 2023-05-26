@@ -57,9 +57,11 @@ body {
   height: 100%;
   padding-bottom: 100%;
 }
+
 #menu {
   background: rgb(255, 0, 157);
 }
+
 .menu-item {
   position: absolute;
   top: 0;
@@ -70,6 +72,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 #menu-text {
   font-family: 'Nova Oval', cursive;
   font-size: 30px;
@@ -77,11 +80,13 @@ body {
   line-height: 40px;
   color: black;
 }
+
 .pixel {
   width: 10%;
   padding-bottom: 10%;
   float: left;
 }
+
 .worm-body {
   z-index: 5;
   background-color: rgb(73, 73, 246);
@@ -90,9 +95,9 @@ body {
   box-shadow: 0 0 7px #00ff00, 0 0 20px #00ff00;
   border-radius: 20% / 50%;
 }
+
 .food {
   background: #00ff00;
-  /* border:3px #00ff00 solid; */
   border-radius: 50% / 50%;
   box-shadow: 0 0 10px #ff009d, 0 0 40px #ff009d, 0 0 80px #ff009d;
 }
