@@ -40,15 +40,9 @@ body {
 /* align-items: center;
 justify-content: center; */
   margin: 0;
-/*     background: #333;
-  color: #fff;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 .container {
-  /* font-family: 'Nova Oval', cursive; */
+  border-radius: 5%;
   max-width: 75vmin;
   max-height: 75vmin;
   width: 100%;
