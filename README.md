@@ -23,7 +23,7 @@ Press arrow keys left, right, up, or down to navigate the worm around the game b
 The goal is for the glow worm to eat as many special substances as possible without crashing into the sides of the maze or its own tail.
 
 
-![image](/images/endgame.png)
+![image](/images/endgame2.png)
 
 ## Attributions
 
