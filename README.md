@@ -27,10 +27,10 @@ The goal is for the glow worm to eat as many special substances as possible with
 
 ## Attributions
 
-https://www.w3schools.com/
-https://www.figma.com
-https://www.mdn.com
-https://www.github.com
+- https://www.w3schools.com/
+- https://www.figma.com
+- https://www.mdn.com
+- https://www.github.com
 
 ## Technologies Used
 
