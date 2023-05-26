@@ -16,13 +16,24 @@ html {
   background-size: calc(var(--s)/4.667) var(--s),var(--s) calc(var(--s)/4.667);
 }
 
+h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 70px;
+  background-color: rgba(123, 255, 141, 0.743);
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 2px;
+  border: 2px solid #ff009d;
+}
+
 html,
 body {
   height: 100%;
 }
 body {
-/* background-image: /* tint image */
-
   height: 100vh;
   width: 100vw;
 /* align-items: center;
@@ -34,16 +45,15 @@ justify-content: center; */
   display: flex;
   justify-content: center;
   align-items: center; */
-  font-family: 'Nova Oval', cursive;
 }
 .container {
+  /* font-family: 'Nova Oval', cursive; */
   max-width: 75vmin;
   max-height: 75vmin;
   width: 100%;
   border: 5px solid black;
   margin: auto;
   overflow: hidden;
-  font-family: 'Nova Oval', cursive;
 }
 
 #menu,
@@ -80,19 +90,29 @@ justify-content: center; */
 }
 .snake-body {
   z-index: 5;
+  background-color: rgb(73, 73, 246);
   position: relative;
-  color:#1d85e6;
-  border: 2px black solid;
+  border: 3px black;
   box-shadow: 0 0 7px #00ff00, 0 0 20px #00ff00;
   border-radius: 20% / 50%;
 }
 .food {
-  background: #DBFF4E;
-  border:3px #00ff00 solid;
+  background: #00ff00;
+  /* border:3px #00ff00 solid; */
   border-radius: 50% / 50%;
-  box-shadow: 0 0 10px #ff0062, 0 0 40px #ff0062, 0 0 80px #ff0062;
+  box-shadow: 0 0 10px #ff009d, 0 0 40px #ff009d, 0 0 80px #ff009d;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100;
+  height: 2.5rem;
+  font-family: 'Nova Oval', cursive;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
 
 
 /* 
@@ -109,20 +129,6 @@ body {
   justify-content: center; */
   /* margin: 0;
 } */
-
-h1 {
-  max-width: 100vmin; 
-  font-family: 'Nova Oval', cursive;
-  font-size: 35px;
-  background-color: rgba(123, 255, 141, 0.743);
-  border-radius: 10px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  padding: 4px;;
-  border:2px solid rgb(255, 0, 157);
-} 
 
 
 
