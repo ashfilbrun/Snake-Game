@@ -54,6 +54,7 @@ justify-content: center; */
   border: 5px solid black;
   margin: auto;
   overflow: hidden;
+  box-shadow: 0 0 10px #ff009d, 0 0 40px #ff009d, 0 0 80px #ff009d;
 }
 
 #menu,
@@ -81,7 +82,7 @@ justify-content: center; */
   font-size: 30px;
   text-align: center;
   line-height: 40px;
-  color: #41b65a;
+  color: black;
 }
 .pixel {
   width: 10%;
