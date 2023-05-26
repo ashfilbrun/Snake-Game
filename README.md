@@ -44,6 +44,7 @@ The goal is for the glow worm to eat as many special substances as possible with
 ### Add Ons Later
 
 - Make game compatible for mobile phones.
+- Add Contrast for Accessibility standards.
 - Add Restart Button for mobile phone use.
 - Add Arrow Key Buttons for mobile phone use.
 - Add extra difficulty levels.
