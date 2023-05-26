@@ -4,7 +4,7 @@ I chose the game of snake because it seemed like a fun challenge to create. I de
 
 CLICK HERE TO PLAY GAME! [Glow Worm Game](https://glowworm.surge.sh).
 
-![image](/images/GLOWWORM.png)
+![image](/images/startgame.png)
 
 ## Setup / How to Play
 
@@ -31,8 +31,8 @@ The goal is for the glow worm to eat as many special substances as possible with
 - https://fonts.google.com/
 - https://www.w3schools.com/
 - https://www.figma.com/file/Yq0cdxR5AgE3i2HTiynewi/Untitled?type=design&node-id=0-1&t=v9wBA4ZEhPnYkwpD-0
-- https://www.mdn.com/
-- https://www.github.com/
+- https://developer.mozilla.org/en-US/
+- https://github.com/
 - https://css-tricks.com/how-to-create-wavy-shapes-patterns-in-css/
 
 ## Technologies Used
