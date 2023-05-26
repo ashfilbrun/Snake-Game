@@ -32,7 +32,7 @@ function generateFood() {
     food = Math.floor(Math.random() * 100);
   }
   // Placing food on the map
-  map.children[food].classList.add("food");
+  map.children[food].classList.add('food');
 }
 
 function startGame() {
@@ -62,7 +62,7 @@ function gameOver() {
   document.getElementById('menu-text').innerText =
     'Game Over\nYour Score: ' +
     (snakeBody.length - 1) +
-    '\nPress ENTER to restart';
+    '\nPress ENTER to restart!';
   document.getElementById('menu').style.display = '';
   document.getElementById('map').style.display = 'none';
   map.innerText = ''; // Clearing the map
