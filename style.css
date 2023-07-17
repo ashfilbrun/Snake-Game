@@ -17,35 +17,46 @@ html {
 }
 
 h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: 'Monoton', cursive;
   font-size: 70px;
   background-color: rgba(123, 255, 141, 0.743);
-  border-radius: 10px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
   margin: 20px;
-  padding: 2px;
+  padding: 5px;
   border: 2px solid #ff009d;
+  border-radius: 10px;
   box-shadow: 0 0 5px #41b65a, 0 0 20px #41b65a, 0 0 40px #41b65a;
+  max-width: 1000px;
+  text-align: center;
 }
 
-html,
+/* html,
 body {
   height: 100%;
-}
+} */
+
 body {
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .container {
-  border-radius: 5%;
+  display: flexbox;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   max-width: 75vmin;
   max-height: 75vmin;
-  width: 100%;
+  min-width: 300px;
+  min-height: 300px;
   border: 5px solid black;
-  margin: auto;
+  border-radius: 5%;
+  margin: 20px;
   overflow: hidden;
   box-shadow: 0 0 10px #ff009d, 0 0 30px #ff009d, 0 0 70px #ff009d;
 }
@@ -63,19 +74,26 @@ body {
 }
 
 .menu-item {
-  position: absolute;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #menu-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  word-wrap: normal;
+  padding: 10px;
   font-family: 'Nova Oval', cursive;
-  font-size: 30px;
+  font-size: 3.5vmin;
   text-align: center;
   line-height: 40px;
   color: black;
@@ -103,13 +121,17 @@ body {
 }
 
 footer {
-  margin: 0 auto;
-  position: absolute;
-  bottom: 30px;
-  width: 100%;
-  height: 2.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
   font-family: 'Nova Oval', cursive;
+  color: black;
+  font-size: 12px;
   text-align: center;
-  margin-top: auto;
-  color: #076dcd;
+  margin-top: 30px;
+}
+
+a {
+  color: black;
 }
