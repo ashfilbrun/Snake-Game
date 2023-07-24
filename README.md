@@ -1,6 +1,6 @@
 # GLOW WORM!
 
-I chose the game of "snake" because it seemed like a fun challenge to create. I decided to make my snake game glow-worm themed. 
+I created this "glow worm" version of the game of Snake because I have great memories of playing snake on an old Nokia years ago. 
 
 CLICK HERE TO PLAY GAME! [Glow Worm Game](https://glowworm.surge.sh).
 
